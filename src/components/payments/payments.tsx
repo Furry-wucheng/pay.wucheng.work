@@ -26,19 +26,25 @@ const Payments = () => {
     {
       id: 'alipay',
       icon: 'i-ri-alipay-fill',
-      link: 'https://qr.alipay.com/fkx17810vgkiizqwtcqebfc',
+      link: 'https://qr.alipay.com/fkx16255v3zwdluks1njzaf',
       type: 'qrcode',
     },
     {
       id: 'wechat',
       icon: 'i-ri-wechat-fill',
-      link: 'wxp://f2f0tkJn97xBE_AALRqk5GQGYH5cu7L9keLG',
+      link: 'wxp://f2f085vwqGgbZRNf3NN9U9OYu5KCPgKzLTafhM6PX8220e3wKln3_BqE9EB_a4k52Yg0',
       type: 'qrcode',
     },
     {
       id: 'qq',
       icon: 'i-ri-qq-fill',
-      link: 'https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&f=wallet&a=1&ac=F18F01A9E9104C71F8C43BE384C96F6213F4F51B993ACEA8806A94F08944E1C9&u=2323355219&n=%E6%B1%9D%E5%8D%97%E4%BA%AC',
+      link: 'https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&f=wallet&a=1&ac=CAEQjKObugkY_4zAqQZCIGFmODZmMDU4Njc5MGJiYWRjZGZiMDkyYzIyNzA4ZjI1_xxx_sign&u=2538000780&n=%E4%BA%91%E5%BD%92%E4%BD%95%E5%A4%84%E5%AF%BB',
+      type: 'qrcode',
+    },
+    {
+      id: 'qq',
+      icon: 'i-ri-qq-fill',
+      link: 'https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&a=1&u=3241748701&ac=CAEQ3dHkiQwYwY7AqQY4AEIgNDI1MjA5ODExMTVhNGQwY2NhZjMwYjUyNTJhMjhmZTY%3D_xxx_sign&n=%E6%88%8A%E6%88%90&f=wallet',
       type: 'qrcode',
     },
   ]
@@ -50,7 +56,8 @@ const Payments = () => {
       console.log(UA.device.type)
       if (payment.id === 'alipay' && UA.device.type === 'mobile') {
         window.open(
-          'alipays://platformapi/startapp?appId=10000007&qrcode=https://qr.alipay.com/fkx07170tzxfnbs56z5ejdb',
+          // 'alipays://platformapi/startapp?appId=09999988&amp;actionType=toAccount&amp;goBack=NO&amp;amount=0.01&amp;userId=2088822593725849&amp;memo=',
+          'alipays://platformapi/startapp?appId=09999988&qrcode=https://qr.alipay.com/fkx16255v3zwdluks1njzaf',
           '_blank'
         )
         return

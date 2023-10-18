@@ -11,7 +11,7 @@ const dictionaries = {
   'zh-cn': zhCN.dict,
 }
 
-const [locale, setLocale] = createSignal<Locale>('en')
+const [locale, setLocale] = createSignal<Locale>('zh-cn')
 const dict = createMemo(() => i18n.flatten(dictionaries[locale()]))
 // eslint-disable-next-line solid/reactivity
 const t = i18n.translator(dict)

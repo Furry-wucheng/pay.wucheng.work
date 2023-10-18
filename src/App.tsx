@@ -24,12 +24,12 @@ const App = () => {
 const LanguageSwitcher = () => {
   const languageList: { text: string; lan: Locale }[] = [
     {
-      text: 'EN',
-      lan: 'en',
-    },
-    {
       text: '简',
       lan: 'zh-cn',
+    },
+    {
+      text: 'EN',
+      lan: 'en',
     },
   ]
 
