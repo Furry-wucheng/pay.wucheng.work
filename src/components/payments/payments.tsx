@@ -42,7 +42,7 @@ const Payments = () => {
       type: 'qrcode',
     },
     {
-      id: 'qq',
+      id: 'qq2',
       icon: 'i-ri-qq-fill',
       link: 'https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&a=1&u=3241748701&ac=CAEQ3dHkiQwYwY7AqQY4AEIgNDI1MjA5ODExMTVhNGQwY2NhZjMwYjUyNTJhMjhmZTY%3D_xxx_sign&n=%E6%88%8A%E6%88%90&f=wallet',
       type: 'qrcode',
@@ -60,7 +60,6 @@ const Payments = () => {
           'alipays://platformapi/startapp?appId=09999988&qrcode=https://qr.alipay.com/fkx16255v3zwdluks1njzaf',
           '_blank'
         )
-        return
       }
       setSelectPayment(payment.id)
 
